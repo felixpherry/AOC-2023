@@ -1,4 +1,5 @@
 import * as fs from 'fs';
+import * as path from 'path';
 
 const isNum = (ch: string) => {
   return ch[0] <= '9' && ch[0] >= '0';
@@ -6,7 +7,7 @@ const isNum = (ch: string) => {
 
 const part1 = () => {
   try {
-    const data = fs.readFileSync('./input.txt', 'utf-8');
+    const data = fs.readFileSync(path.join(__dirname, './input.txt'), 'utf-8');
     const items = data.split('\n');
     let sum = items.reduce((tot, item) => {
       let first: number | null = null,
@@ -31,7 +32,7 @@ const part1 = () => {
 
 const part2 = () => {
   try {
-    const data = fs.readFileSync('./input.txt', 'utf-8');
+    const data = fs.readFileSync(path.join(__dirname, './input.txt'), 'utf-8');
     const items = data.split('\n');
     let sum = items.reduce((tot, item) => {
       let first: number | null = null,
