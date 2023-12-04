@@ -78,7 +78,6 @@ const part2 = () => {
     let sum = 0;
 
     for (let i = 0; i < r; i++) {
-      let numOfGear = 0;
       for (let j = 0; j < c; j++) {
         if (rows[i][j] !== '*') continue;
 
