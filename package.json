@@ -8,7 +8,9 @@
     "day2": "ts-node ./src/02/index.ts",
     "day3": "ts-node ./src/03/index.ts",
     "day4": "ts-node ./src/04/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "day5": "ts-node ./src/05/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc --init"
   },
   "keywords": [],
   "author": "",
