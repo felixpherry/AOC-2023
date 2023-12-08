@@ -83,7 +83,7 @@ const part2 = () => {
 
     const { graphs, instructions } = input;
 
-    const cycles = [];
+    let ans = 1;
     for (const startingNode of Object.keys(graphs)) {
       if (!startingNode.includes('A')) continue;
       let ctr = 0;
@@ -100,12 +100,7 @@ const part2 = () => {
           if (curr.includes('Z')) break;
         }
       }
-      cycles.push(ctr);
-    }
-
-    let ans = cycles[0];
-    for (let i = 1; i < cycles.length; i++) {
-      ans = lcm(ans, cycles[i]);
+      ans = lcm(ans, ctr);
     }
 
     console.log('Part 2', ans);
