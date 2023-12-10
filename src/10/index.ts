@@ -116,7 +116,6 @@ const findDistances = (rows: string[]) => {
       } else {
         const origins = allowedDirections[rows[i][j]];
         const destinations = allowedDirections[rows[ni][nj]];
-        if (!origins || !destinations) console.log(rows[i][j], rows[ni][nj]);
 
         if (
           (origins[0].to === destinations[0].from && origins[0].to === dir) ||
