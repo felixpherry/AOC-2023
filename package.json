@@ -15,6 +15,7 @@
     "day9": "ts-node ./src/09/index.ts",
     "day10": "ts-node ./src/10/index.ts",
     "day11": "ts-node ./src/11/index.ts",
+    "day12": "ts-node ./src/12/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc --init"
   },
