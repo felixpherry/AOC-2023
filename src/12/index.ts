@@ -50,6 +50,7 @@ const getAnswer = () => {
     const rows = readInput();
     if (!rows) throw new Error('Failed to parse input');
 
+    const startTime1 = new Date().getTime();
     const ans1: number = rows.reduce(
       (acc, row) =>
         acc +
@@ -59,9 +60,11 @@ const getAnswer = () => {
         ),
       0
     );
+    const endTime1 = new Date().getTime();
 
-    console.log('Part 1', ans1);
+    console.log('Part 1', `${endTime1 - startTime1}ms`);
 
+    const startTime2 = new Date().getTime();
     const ans2: number = rows.reduce(
       (acc, row): number =>
         acc +
@@ -72,7 +75,8 @@ const getAnswer = () => {
       0
     );
 
-    console.log('Part 2', ans2);
+    const endTime2 = new Date().getTime();
+    console.log('Part 2', `${endTime2 - startTime2}ms`);
   } catch (error) {
     console.log(error);
   }
