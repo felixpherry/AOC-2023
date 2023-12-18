@@ -20,6 +20,7 @@
     "day14": "ts-node ./src/14/index.ts",
     "day15": "ts-node ./src/15/index.ts",
     "day16": "ts-node ./src/16/index.ts",
+    "day17": "ts-node ./src/17/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc --init"
   },
@@ -27,6 +28,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "heap-js": "^2.3.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2"
   },
